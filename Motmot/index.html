@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#240d19">
+  <meta id="page-description" name="description" content="A little universe made just for you.">
+  <title>For You, My Love ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="petal-layer" aria-hidden="true"></div>
+  <div id="confetti-layer" aria-hidden="true"></div>
+
+  <dialog class="welcome-overlay" id="welcome-overlay" aria-labelledby="welcome-heading" aria-describedby="welcome-description">
+    <div class="welcome-card">
+      <span class="welcome-heart" aria-hidden="true">♡</span>
+      <h1 id="welcome-heading">A little love,<br><em>just for you ♡</em></h1>
+      <p id="welcome-description">A quiet moment, a little music, and everything I want to tell you.</p>
+      <button class="primary-button" id="welcome-start" type="button">Open it, baba! ♡</button>
+      <p class="welcome-status" id="welcome-status" role="status" aria-live="polite"></p>
+    </div>
+  </dialog>
+
+  <header class="nav">
+    <a class="monogram" href="#home" aria-label="Back to top"><span id="monogram-first">A</span><span class="monogram-heart" aria-hidden="true">♡</span><span id="monogram-second">U</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#letter">Letter</a>
+      <a href="#moments">Moments</a>
+      <a href="#reasons">Reasons</a>
+      <a href="#story">Songs</a>
+    </nav>
+    <button id="music-toggle" class="icon-button" type="button" aria-label="Play background music" aria-pressed="false">♫ <span>Music off</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow" id="hero-eyebrow">A LITTLE SOMETHING FOR MY FAVORITE PERSON</p>
+        <div class="rose" aria-hidden="true"><span>✿</span></div>
+        <h1>Happy <em>Monthsary,</em><br><span id="recipient-name">my love</span><span class="title-heart"> ♡</span></h1>
+        <p class="hero-subtitle" id="hero-subtitle">In every version of this life, I'd still choose you.</p>
+        <p class="date-line" id="monthsary-date">OUR LOVE STORY, STILL UNFOLDING</p>
+        <a class="primary-button" id="hero-button" href="#letter">Open your surprise <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-footer"><span id="hero-footer-note">MADE WITH ALL MY HEART</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="section-heading reveal"><span class="eyebrow">01 / WORDS FROM MY HEART</span><h2>A letter <em>for you</em></h2><p>Some feelings are too beautiful to leave unsaid.</p></div>
+      <div class="envelope-wrap reveal">
+        <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-controls="letter-content" aria-label="Open your love letter">
+          <span class="envelope-back"></span><span class="envelope-paper"></span><span class="envelope-flap"></span><span class="envelope-front"></span><span class="wax-seal">♡</span>
+        </button>
+        <p class="hint" id="envelope-hint">Tap the envelope to read my heart ♡</p>
+      </div>
+      <article class="letter-card" id="letter-content" hidden tabindex="-1">
+        <span class="eyebrow" id="letter-eyebrow">TO MY FAVORITE PERSON</span>
+        <h3 id="letter-greeting">My dearest</h3>
+        <div id="letter-paragraphs"></div>
+        <p class="letter-signature"><span id="letter-signoff">Forever choosing you,</span><br><strong id="sender-name">Your favorite person</strong> ♡</p>
+      </article>
+    </section>
+
+    <section class="section moments-section" id="moments">
+      <div class="section-heading reveal"><span class="eyebrow">02 / OUR LITTLE UNIVERSE</span><h2>Us, in <em>moments</em></h2><p>Little memories. Big feelings. My favorite kind of forever.</p></div>
+      <div class="gallery" id="gallery"></div>
+      <div class="memory-note reveal" id="memory-note">“The best part of every memory is that I got to make it with you.”</div>
+    </section>
+
+    <section class="section reasons-section" id="reasons">
+      <div class="section-heading reveal"><span class="eyebrow">03 / JUST A FEW OF INFINITE REASONS</span><h2>Why I <em>choose you</em></h2><p>Press a card. There is always something more to love about you.</p></div>
+      <div class="reasons-grid" id="reasons-grid"></div>
+    </section>
+
+    <section class="section songs-section" id="story">
+      <div class="section-heading reveal">
+        <span class="eyebrow">04 / THE SONGS THAT REMIND ME OF YOU</span>
+        <h2>If love had a soundtrack,<br><em>it would sound like you.</em></h2>
+        <p>Some songs aren't just meant to be heard. They're meant to remind me of you, of us, and of every little moment we've shared.</p>
+      </div>
+      <div class="songs-grid" id="songs-grid" aria-label="Songs dedicated to you"></div>
+      <div class="playlist-story" id="playlist-story"></div>
+    </section>
+
+    <section class="section ending-section" id="forever">
+      <div class="ending-content reveal">
+        <span class="eyebrow" id="ending-eyebrow">ONE LAST THING BEFORE YOU GO</span>
+        <div class="ending-heart" aria-hidden="true">♡</div>
+        <h2><span id="ending-headline">If I had a thousand lives,</span><br><em id="ending-highlight">I'd find you in every one.</em></h2>
+        <p id="ending-subtext">Thank you for being my favorite hello, my safest place, and my favorite person to love.</p>
+        <button class="primary-button" id="surprise-button" type="button"><span id="surprise-button-label">One last surprise</span><span aria-hidden="true">♡</span></button>
+        <p class="hidden-message" id="surprise-message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer><span id="footer-copy">MADE WITH LOVE, JUST FOR YOU</span> <span aria-hidden="true">♡</span> <span id="footer-year"></span><p class="music-credit" id="music-credit"></p></footer>
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="Our special memory">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Close photo">×</button>
+    <img id="dialog-image" alt="">
+    <p id="dialog-caption"></p>
+  </dialog>
+  <audio id="bg-music" loop preload="none" playsinline></audio>
+  <p class="sr-only" id="music-status" role="status" aria-live="polite"></p>
+</body>
+</html>
